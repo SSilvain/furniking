@@ -1,0 +1,140 @@
+.header__container {
+    background: #444;
+}
+
+.header__logo {}
+
+.menu {
+    &__body {
+        z-index: 99;
+        overflow: auto;
+        padding: 120px 40px 40px 40px;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: -100%;
+        background: var(--main-color);
+        background: #f43f6f;
+
+        @media (min-width: 768px) {
+            overflow: visible;
+            position: relative;
+            padding: 10px 0 0 0;
+            background: none;
+            width: auto;
+            height: auto;
+
+            left: 0;
+            margin-right: 40px;
+        }
+    }
+
+    &__list {
+        @media (min-width: 768px) {
+            display: flex;
+        }
+    }
+
+    &__item {
+        margin-bottom: 20px;
+        text-align: right;
+
+        @media (min-width: 768px) {
+            text-align: left;
+            margin-bottom: 0;
+            margin-left: 30px;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        font-size: 32px;
+        color: var(--text-color-light);
+        transition: 0.3s;
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: var(--text-color-main);
+            }
+        }
+
+        @media (min-width: $mobile) {
+            opacity: 1;
+            display: inline-block;
+            font-size: 16px;
+        }
+    }
+
+    @media (min-width: $mobile) {
+        z-index: 1;
+    }
+}
+
+//Burger
+
+.icon-menu {
+    margin-top: 0.2125rem;
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 26px;
+    height: 16px;
+    z-index: 99999999;
+
+    @media (any-hover: none) {
+        cursor: default;
+    }
+
+    &__center,
+    &__before,
+    &__after {
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: rem(2);
+        background-color: #fff;
+    }
+
+    &__before {
+        top: 0;
+    }
+
+    &__after {
+        bottom: 0;
+    }
+
+    &__before,
+    &__after {}
+
+    &__center {
+        top: 50%;
+        transform: translateY(-50%);
+        width: 80%;
+        right: 0;
+        left: auto;
+    }
+
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+// hero
+
+.bounds {
+    top: 0;
+    left: -100%;
+    z-index: -1;
+    opacity: 0;
+    position: fixed;
+    width: 200%;
+    height: 100%;
+    background-color: orangered;
+}
+
+.hero {}
+
+.hero__container {}
