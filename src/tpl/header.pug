@@ -6,13 +6,14 @@
 			.tools__login Login or Sign up
 .header
 	.header__container
-		a.header__logo(href="#") Logo
-		.header__search
-			input.header__search-input
-		.header__account
-			.header__cart
-			.header__messages
-			.header__user
+		.header__wrapper
+			a.header__logo(href="#") <img src="@img/logo.svg" alt="logo"/> Furniking
+			.header__search
+				input.header__search-input(value="search" type="text")
+			.header__account
+				.header__account-item.header__cart
+				.header__account-item.header__notifications
+				.header__account-item.header__user
 
 .hero
 	.hero__container
