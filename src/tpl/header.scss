@@ -1,3 +1,37 @@
+.top-line {
+    background: #7AC751;
+    color: rgba(255, 255, 255, 1);
+    color: #FFF;
+    // font-family: Rubik;
+    padding: 15px 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.top-line__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-line__welcome {}
+
+.top-line__tools {}
+
+
+.tools {
+    display: flex;
+}
+
+.tools__language {
+    margin: 0 20px 0 0;
+    border-right: 2px solid;
+    padding-right: 40px;
+}
+
+.tools__login {}
+
 .header__container {
     background: #444;
 }

@@ -3,9 +3,8 @@
 @import "base/mixins";
 
 //&display=swap
-
-@import url(https://fonts.googleapis.com/css?family=Oxygen:300,regular,700&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Mulish:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap);
 // @import "fonts/fonts";
 
 //@import "fonts/icons";
@@ -15,11 +14,11 @@
 	--text-color-main: #121212;
 	--text-color-slave: #666666;
 	--text-color-light: #fff;
-	--font-main: Oxygen;
-	--font-slave: Inter;
+	--font-main: Rubik;
+	--font-slave: Mulish;
 }
 
-$fontSize: rem(17);
+$fontSize: rem(16);
 
 // $mainColor: var(--main-color);
 
@@ -131,7 +130,7 @@ body {
 
 @import "common";
 
-@import "pages/header";
-@import "pages/footer";
+@import "../tpl/header";
+@import "../tpl/footer";
 
-@import "pages/indexpage/01_index";
+// @import "pages/indexpage/01_index";
