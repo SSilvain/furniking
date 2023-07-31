@@ -4,8 +4,55 @@ block vars
 	- var title = "Home"
 
 block content
-	main.page.
-		index
+	main.page
+		.features
+			.features__container
+				.features__wrapper
+					.features__item
+						img.features__img(src="@img/features-1.svg" alt="features")
+						.features__item-body
+							.features__title free Shipping
+							.features__sub-title Orders over $100
+					.features__item
+						img.features__img(src="@img/features-2.svg" alt="features")
+						.features__item-body
+							.features__title Smart Gift Card
+							.features__sub-title Buy $1000 to get card
+					.features__item
+						img.features__img(src="@img/features-3.svg" alt="features")
+						.features__item-body
+							.features__title Quick Payment
+							.features__sub-title 100% secure payment
+					.features__item
+						img.features__img(src="@img/features-4.svg" alt="features")
+						.features__item-body
+							.features__title 24/7 Support
+							.features__sub-title Quick support
+
+		.offer
+			.offer__container
+				.offer__wrapper
+					.offer__item.offer__item--main
+						img.offer__img(src="@img/offer/offer-1.png" alt="offer")
+						.offer__title.offer__title--main Modern Furniture Collections
+						.offer__sub-title.offer__sub-title--main Starting from $500
+						.offer__read-more Read more
+					.offer__item
+						img.offer__img(src="@img/offer/offer-2.png" alt="offer")
+						.offer__title Geometric Bookcase
+						.offer__sub-title Up to 20% discount
+						.offer__read-more Read more
+					.offer__item
+						img.offer__img(src="@img/offer/offer-3.png" alt="offer")
+						.offer__title Minimal Sofa collections
+						.offer__sub-title Sale upto 40% discount
+						.offer__read-more Read more
+
+
+
+
+
+
 
 
 

@@ -27,7 +27,7 @@ $minWidth: 320;
 
 $maxWidth: 1440;
 
-$maxWidthContainer: 1440;
+$maxWidthContainer: 1172;
 
 $containerPadding: 30;
 
@@ -131,6 +131,7 @@ body {
 @import "common";
 
 @import "../tpl/header";
+@import "/src/index";
 @import "../tpl/footer";
 
 // @import "pages/indexpage/01_index";
