@@ -1,3 +1,5 @@
+
+
 extends tpl/tpl
 
 block vars
@@ -5,29 +7,18 @@ block vars
 
 block content
 	main.page
+		- var features__img = ["@img/features-1.svg","@img/features-2.svg","@img/features-3.svg","@img/features-4.svg"]
+		- var features__title = ["Free Shipping","Smart Gift Card","Quick Payment","24/7 Support"]
+		- var features__sub_title = ["Orders over $100","Buy $1000 to get card","100% secure payment","Quick support"]
 		.features
 			.features__container
 				.features__wrapper
-					.features__item
-						img.features__img(src="@img/features-1.svg" alt="features")
-						.features__item-body
-							.features__title free Shipping
-							.features__sub-title Orders over $100
-					.features__item
-						img.features__img(src="@img/features-2.svg" alt="features")
-						.features__item-body
-							.features__title Smart Gift Card
-							.features__sub-title Buy $1000 to get card
-					.features__item
-						img.features__img(src="@img/features-3.svg" alt="features")
-						.features__item-body
-							.features__title Quick Payment
-							.features__sub-title 100% secure payment
-					.features__item
-						img.features__img(src="@img/features-4.svg" alt="features")
-						.features__item-body
-							.features__title 24/7 Support
-							.features__sub-title Quick support
+					each item,index in features__img
+						.features__item
+							img.features__img(src=features__img[index] alt="features")
+							.features__item-body
+								.features__title= features__title[index]
+								.features__sub-title= features__sub_title[index]
 
 		.offer
 			.offer__container
@@ -47,6 +38,86 @@ block content
 						.offer__title Minimal Sofa collections
 						.offer__sub-title Sale upto 40% discount
 						.offer__read-more Read more
+
+
+		- var item_special__price_off = ["40% off","50% off"]
+		- var item_special__title = ["Living Room Furniture","Modern chair"]
+		- var item_special__sub_title = ["You don't have a chair. Are you ready for growth? Shop with us 40% discount!","Hot chairs of the modern era are now available in our stock."]
+		- var item_special__new_price = ["$150","$75"]
+		- var item_special__old_price = ["$250","$150"]
+		.special
+			.special__container
+				.special__title Special offer
+				.special__wrapper
+					each item, index in item_special__price_off
+						.special__item.item-special
+							.item-special__price-off= item_special__price_off[index]
+							h3.item-special__title= item_special__title[index]
+							p.item-special__sub-title= item_special__sub_title[index]
+							.item-special__price-block
+								.item-special__new-price= item_special__new_price[index]
+								.item-special__old-price= item_special__old_price[index]
+								.item-special__price-button shop now
+							.item-special__counter counter
+
+		.our-products
+			.our-products__container
+				.our-products__wrapper
+					.our-products__tabs
+						each item in ["All Products","Best Sellers","New Arrivals","Todays Deals"]
+							.our-products__tab= item
+
+
+
+
+
+//- Minimal LCD chair
+//- Modern Sofa
+//- Microfiber Sofa
+//- Wood Coffee Tables
+//- Acacia Wood Club Chairs
+//- Amalia Cowhide Bench
+//- Juno-Hinged Lid Storage
+//- Delicia 3 Piece Living Room
+
+
+//- Sale
+//- New
+//- -30%
+//- Sale
+//- -30%
+//- Sale
+//- New
+//- New
+
+//- Chair
+//- sofa
+//- sofa
+//- tabble
+//- Chair
+//- Bench
+//- Storage
+//- Furniture
+
+
+//- $180
+//- $120
+//- $130
+//- $100
+//- $100
+//- $130
+//- $180
+//- $120
+
+
+//- $250
+//- $150
+//- $150
+//- $120
+//- $120
+//- $150
+//- $250
+//- $150
 
 
 

@@ -84,3 +84,84 @@
 .offer__sub-title--main {}
 
 .offer__read-more {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.special {
+
+	// .special__container
+
+	&__container {}
+
+	// .special__title
+
+	&__title {
+		margin-bottom: 40px;
+		color: var(--primary, #555);
+
+		/* H2 */
+		font-family: Mulish;
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		text-transform: uppercase;
+	}
+
+	// .special__wrapper
+
+	&__wrapper {
+		display: flex;
+		// padding: 0 20px;
+		gap: 20px;
+	}
+
+	// .special__item
+
+	&__item {}
+}
+
+.item-special {
+
+	// .item-special__price-off
+
+	&__price-off {}
+
+	// .item-special__title
+
+	&__title {}
+
+	// .item-special__sub-title
+
+	&__sub-title {}
+
+	// .item-special__price-block
+
+	&__price-block {}
+
+	// .item-special__new-price
+
+	&__new-price {}
+
+	// .item-special__old-price
+
+	&__old-price {}
+
+	// .item-special__price-button
+
+	&__price-button {}
+
+	// .item-special__counter
+
+	&__counter {}
+}

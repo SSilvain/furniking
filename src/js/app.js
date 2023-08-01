@@ -10,3 +10,12 @@ core.menuToggleInit();
 core.spollers();
 
 import "./files/script.js";
+
+
+
+//practics js
+
+const listItems = document.querySelectorAll(".item-special__price-off")
+
+listItems.forEach(item => { console.log(item) })
+
