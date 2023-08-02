@@ -23,42 +23,45 @@ block content
 		.offer
 			.offer__container
 				.offer__wrapper
-					.offer__item.offer__item--main
+					.offer__item.offer__item-ibg.offer__item--main
 						img.offer__img(src="@img/offer/offer-1.png" alt="offer")
 						.offer__title.offer__title--main Modern Furniture Collections
 						.offer__sub-title.offer__sub-title--main Starting from $500
 						.offer__read-more Read more
-					.offer__item
+					.offer__item.offer__item-ibg
 						img.offer__img(src="@img/offer/offer-2.png" alt="offer")
 						.offer__title Geometric Bookcase
 						.offer__sub-title Up to 20% discount
 						.offer__read-more Read more
-					.offer__item
+					.offer__item.offer__item-ibg
 						img.offer__img(src="@img/offer/offer-3.png" alt="offer")
 						.offer__title Minimal Sofa collections
 						.offer__sub-title Sale upto 40% discount
 						.offer__read-more Read more
 
 
-		- var item_special__price_off = ["40% off","50% off"]
-		- var item_special__title = ["Living Room Furniture","Modern chair"]
-		- var item_special__sub_title = ["You don't have a chair. Are you ready for growth? Shop with us 40% discount!","Hot chairs of the modern era are now available in our stock."]
-		- var item_special__new_price = ["$150","$75"]
-		- var item_special__old_price = ["$250","$150"]
+		//- - var special__img = ["@img/special-offer/special-offer-1.png","@img/special-offer/special-offer-2.png"]
+		//- - var item_special__price_off = ["40% off","50% off"]
+		//- - var item_special__title = ["Living Room Furniture","Modern chair"]
+		//- - var item_special__sub_title = ["You don't have a chair. Are you ready for growth? Shop with us 40% discount!","Hot chairs of the modern era are now available in our stock."]
+		//- - var item_special__new_price = ["$150","$75"]
+		//- - var item_special__old_price = ["$250","$150"]
 		.special
 			.special__container
 				.special__title Special offer
 				.special__wrapper
-					each item, index in item_special__price_off
-						.special__item.item-special
-							.item-special__price-off= item_special__price_off[index]
-							h3.item-special__title= item_special__title[index]
-							p.item-special__sub-title= item_special__sub_title[index]
+					each item, i in ["i","i",]
+						.special__item.item-special.item-special-ibg
+							//- .item-special__img-ibg
+							img.item-special__img(src=["@img/special-offer/special-offer-1.png","@img/special-offer/special-offer-2.png"][i], alt="special offer")
+							.item-special__price-off= ["40% off","50% off"][i]
+							h3.item-special__title= ["Living Room Furniture","Modern chair"][i]
+							p.item-special__sub-title= ["You don't have a chair. Are you ready for growth? Shop with us 40% discount!","Hot chairs of the modern era are now available in our stock."][i]
 							.item-special__price-block
-								.item-special__new-price= item_special__new_price[index]
-								.item-special__old-price= item_special__old_price[index]
-								.item-special__price-button shop now
-							.item-special__counter counter
+								.item-special__new-price= ["$150","$75"][i]
+								.item-special__old-price= ["$250","$150"][i]
+								button.item-special__price-button shop now
+							.item-special__counter counter 
 
 		.our-products
 			.our-products__container
@@ -71,53 +74,7 @@ block content
 
 
 
-//- Minimal LCD chair
-//- Modern Sofa
-//- Microfiber Sofa
-//- Wood Coffee Tables
-//- Acacia Wood Club Chairs
-//- Amalia Cowhide Bench
-//- Juno-Hinged Lid Storage
-//- Delicia 3 Piece Living Room
 
-
-//- Sale
-//- New
-//- -30%
-//- Sale
-//- -30%
-//- Sale
-//- New
-//- New
-
-//- Chair
-//- sofa
-//- sofa
-//- tabble
-//- Chair
-//- Bench
-//- Storage
-//- Furniture
-
-
-//- $180
-//- $120
-//- $130
-//- $100
-//- $100
-//- $130
-//- $180
-//- $120
-
-
-//- $250
-//- $150
-//- $150
-//- $120
-//- $120
-//- $150
-//- $250
-//- $150
 
 
 
